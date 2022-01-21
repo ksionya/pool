@@ -1,0 +1,544 @@
+.thanks-popup {
+  display: none;
+  text-align: center;
+  padding: 90px 100px 70px;
+  width: 1530px;
+  h2 {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 160%;
+    color: rgba($color1, 0.8);
+    margin: 0 0 18px;
+  }
+  span {
+    display: block;
+    font-size: 16px;
+    line-height: 180%;
+    margin: 0 0 15px;
+  }
+  .tap-bar {
+    display: flex;
+    a {
+      margin: 0 2px;
+    }
+  }
+  h3 {
+    text-align: left;
+    margin: 69px 0 29px;
+  }
+}
+.thanks-list {
+  margin: 0 -15px;
+  overflow: hidden;
+  a {
+    display: block;
+    width: 33.3%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0 0 20px;
+    transition: all 0.2s ease;
+    &:hover {
+      transition: all 0.2s ease;
+      .in {
+        box-shadow: 5px 5px 30px rgba(69, 98, 174, 0.07);
+        border: 1px solid $color5;
+        border-top: none;
+      }
+    }
+  }
+  i {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color2;
+    margin: 20px 0;
+    font-style: normal;
+  }
+  .in {
+    background: #FFFFFF;
+    border: 1px solid rgba(22, 117, 228, 0.25);
+    border-top: none;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+  .img-wrapper {
+    margin: 0 -31px;
+    height: 320px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+  .fancybox-button {
+    width: 102px;
+    svg {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      top: 17px;
+      right: -16px;
+      path {
+        fill: #00B2FF;
+      }
+    }
+    &:before {
+      display: inline-block;
+      content: 'Закрыть';
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 140%;
+      color: $color3;
+      position: absolute;
+      top: 30px;
+      right: 50px;
+    }
+  }
+  .fancybox-content {
+    max-height: 952px;
+  }
+  .thanks-2 {
+    p {
+      padding: 0 40px;
+    }
+  }
+.step {
+  display: none;
+  max-width: 1530px;
+  text-align: center;
+  padding: 90px 100px 70px;
+  box-sizing: border-box;
+  p {
+    font-size: 20px;
+    line-height: 160%;
+    color: rgba($color1, 0.8);
+    font-weight: bold;
+    margin: 20px 0 30px;
+
+  }
+  i {
+    text-transform: uppercase;
+    font-style: normal;
+  }
+  b {
+    font-size: 16px;
+  }
+  .in {
+    overflow: hidden;
+  }
+  .btn-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    padding: 0 0 0 15px;
+    &:after {
+      right: auto;
+      left: 0;
+      top: 3px;
+      width: 5px;
+      height: 10px;
+      transform: rotate(-180deg);
+    }
+  }
+  .btn-blue_arrow {
+    width: 320px;
+  }
+
+
+}
+.step-left {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 80px 0 0;
+  p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 180%;
+    color: $color1;
+    font-weight: normal;
+    margin: 22px 0 30px;
+  }
+  .form-item {
+    position: relative;
+    margin: 0 0 15px;
+  }
+  input {
+    width: 100%;
+    background: $color5;
+    border: 1px solid rgba(0, 178, 255, 0.8);
+    box-sizing: border-box;
+    padding: 26px 25px 27px 48px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color2;
+    transition: all 0.2s ease;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($color2, 0.7);
+    }
+
+    &:focus {
+      border-bottom: 2px solid $color3;
+      padding: 26px 25px 26px 48px;
+      transition: all 0.2s ease;
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    z-index: 10;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 180%;
+    color: $color2;
+    width: 50%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 0 0 40px;
+    float: left;
+    text-align: left;
+    margin: 0 0 12px;
+    b {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 2px solid #00B2FF;
+      box-sizing: border-box;
+      position: absolute;
+      top: 9px;
+      left: 20px;
+    }
+
+  }
+
+
+
+}
+.step-right {
+  width: 50%;
+  float: left;
+}
+.buttons {
+  margin: 43px 0 0;
+  .btn-blue_arrow {
+    float: right;
+    padding: 29px 130px 29px 30px;
+    margin: 0 0 30px;
+    i:after {
+      width: 85px;
+      right: -101px;
+      background-size: cover;
+    }
+  }
+  .btn-white {
+    float: left;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 320px;
+    padding: 27px 35px 26px;
+  }
+}
+.price {
+  margin: 16px 0 0px;
+  background: rgba(0, 178, 255, 0.35);
+  border: 1px solid rgba(0, 178, 255, 0.8);
+  box-sizing: border-box;
+  padding: 30px 26px 32px 30px;
+  span {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 180%;
+    color: $color2;
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 160%;
+    color: $color2;
+    text-align: left;
+    margin: 0 0 3px;
+  }
+}
+.step-5 {
+  .step-left {
+    p {
+      margin: 3px 0 22px;
+    }
+  }
+}
+.radio-list {
+  margin: 0 -15px;
+  display: flex;
+  justify-content: space-between;
+}
+.radio-item {
+  width: 33.3%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 0 15px;
+  transition: all 0.2s ease;
+  label {
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid rgba(22, 117, 228, 0.25);
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+    min-height: 100%;
+    cursor: pointer;
+
+  }
+  i {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color2;
+    text-transform: none;
+    text-align: left;
+    margin: 30px 0 0;
+  }
+  .img-wrapper {
+    margin: 0 -31px;
+    height: 320px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  input {
+    display: none;
+  }
+  &:hover {
+    transition: all 0.2s ease;
+    label {
+      background: #FFFFFF;
+      box-shadow: 5px 5px 30px rgba(69, 98, 174, 0.07);
+      border: 1px solid $color5;
+    }
+  }
+   input:checked + label {
+     box-shadow: 5px 5px 30px rgba(69, 98, 174, 0.07);
+     border: 1px solid $color5;
+   }
+}
+.step-1 {
+  .buttons {
+    margin: 33px 0 0;
+  }
+}
+.step-2 {
+  .radio-item {
+    width: 25%;
+    b {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+    }
+    i {
+      font-weight: normal;
+      margin: 0;
+      text-align: center;
+    }
+    .img-wrapper {
+      margin: 0 -31px 25px;
+    }
+  }
+}
+.popup-callback {
+  padding: 57px 15px 15px;
+  h2 {
+    text-align: center;
+    margin: 0 0 15px;
+  }
+  p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 140%;
+    color: rgba($color1, 0.8);
+    padding: 0 45px;
+  }
+  .btn-blue {
+    display: block;
+    width: 100%;
+    margin: 15px 0 20px;
+  }
+}
+.popup-mobile {
+  width: 290px;
+  display: none;
+  .form-item {
+    margin: 0 0 15px;
+    position: relative;
+  }
+  input {
+    width: 100%;
+    background: $color5;
+    border: 1px solid rgba(0, 178, 255, 0.8);
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 18px 25px 18px 42px;
+    color: $color2;
+    transition: all 0.2s ease;
+
+    &::placeholder {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($color2, 0.7);
+    }
+
+    &:focus {
+      border-bottom: 2px solid $color3;
+      padding: 18px 25px 17px 42px;
+      transition: all 0.2s ease;
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    z-index: 10;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .checkbox {
+    padding: 0px 0 5px 34px;
+    margin: -4px 0 0;
+    label {
+      display: block;
+      font-size: 10px;
+      line-height: 140%;
+      color: rgba(14, 33, 70, 0.6);
+      padding: 0;
+      &:before, &:after {
+        top: 9px;
+        left: -34px;
+      }
+
+    }
+  }
+  textarea {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 178, 255, 0.8);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 18px 18px 18px 43px;
+    height: 110px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($color2, 0.7);
+    }
+
+    &:focus {
+      border-bottom: 2px solid $color3;
+      padding: 18px 18px 17px 43px;
+      transition: all 0.2s ease;
+    }
+
+    .icon {
+      top: 26px;
+      left: 24px;
+    }
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+
+}
+.popup-callback_big {
+  p {
+    padding: 0 15px;
+  }
+}
+.select {
+  background: $color5;
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 18px 25px 18px 42px;
+  color: $color2;
+  transition: all 0.2s ease;
+}
+.select2-container {
+  width: 100% !important;
+}
+.select2-container--default {
+  .select2-selection--single {
+    border: 1px solid rgba(0, 178, 255, 0.8);
+    padding: 18px 25px 18px 42px;
+    height: auto;
+    .select2-selection__rendered {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($color2, 0.7);
+    }
+    .select2-selection__arrow {
+      height: 100%;
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      width: 32px;
+      b {
+        border: none;
+        background: url(/images/svg/icon8.svg) top center no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        left: 4px;
+        margin: 0;
+        position: absolute;
+        top: 20px;
+      }
+    }
+  }
+
+}
+

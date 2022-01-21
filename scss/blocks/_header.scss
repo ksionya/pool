@@ -1,0 +1,203 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+.header-top {
+    overflow: hidden;
+  padding: 9px 0 7px;
+  background: #ffffff;
+}
+
+.header-top_left {
+    float: left;
+    .logo {
+        display: inline-block;
+      margin: 0px 26px 0 0;
+      padding: 2px 0 0;
+    }
+    p {
+        margin: 0;
+        display: inline-block;
+        max-width: 245px;
+        padding: 0 30px;
+        border-left: 1px solid $color2;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 120%;
+    }
+}
+
+.header-top_right {
+    float: right;
+    a {
+        display: inline-block;
+      padding: 12px 15px 12px 20px;
+      font-size: 12px;
+      line-height: 100%;
+        color: $color2;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      vertical-align: middle;
+        &:hover {
+            transition: all 0.2s ease;
+            i {
+                border-bottom: none;
+            }
+        }
+    }
+    i {
+        font-style: normal;
+        border-bottom: 1px solid $color2;
+    }
+    img {
+      margin: 0px 5px -2px 0;
+    }
+}
+
+.header-main {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+  padding: 14px 0 16px;
+    border-bottom: 1px solid rgba($color5, 0.15);
+    .in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      flex-wrap: wrap;
+    }
+}
+
+.header-menu {
+  ul {
+    margin: 0;
+    padding: 0 0 0 90px;
+  }
+    li {
+        display: inline-block;
+        &:last-child {
+            a:after {
+                display: none;
+            }
+        }
+    }
+    a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba($color5, 0.8);
+        text-decoration: none;
+        padding: 8px 50px;
+        position: relative;
+      transition: all 0.2s ease;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background: #00B2FF;
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+      &:hover {
+        color: $color5;
+        transition: all 0.2s ease;
+      }
+    }
+}
+
+.language {
+    a {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: rgba($color5, 0.8);
+        text-decoration: none;
+      margin: 0 5px 0 1px;
+        &.active {
+            font-weight: bold;
+        }
+        &:hover {
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+.header-popup {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: $color3;
+  margin: 3px 0 0;
+  transition: all 0.2s ease;
+  &:hover {
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+}
+
+.logo {
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+.burger {
+  display: none;
+  width: 25px;
+  height: 25px;
+  padding: 11px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  span {
+    display: block;
+    height: 1px;
+    width: 25px;
+    background: $color1;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 25px;
+      background: $color1;
+      position: absolute;
+      top: -6px;
+      transition: all 0.2s ease;
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 25px;
+      background: $color1;
+      position: absolute;
+      top: 6px;
+      transition: all 0.2s ease;
+    }
+  }
+}
+.burger.active {
+  span {
+    background: $color5;
+    &:before {
+      transform: rotate(45deg);
+      transition: all 0.2s ease;
+      top: 0;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: all 0.2s ease;
+    }
+  }
+}

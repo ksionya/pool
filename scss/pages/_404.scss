@@ -1,0 +1,39 @@
+.main-error {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  background: url("../images/bg-404.png") top 56px center no-repeat;
+  position: relative;
+  padding: 56px 0 0;
+  box-sizing: border-box;
+  background-size: cover;
+  text-align: center;
+h1 {
+  font-size: 150px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: $color5;
+  margin: 0 0 10px;
+}
+  h3 {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 10px;
+  }
+  p {
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 50px;
+  }
+  .blue-label {
+    margin: 0;
+  }
+  .btn-blue_arrow {
+    padding: 29px 166px 29px 30px;
+    i:after {
+      width: 121px;
+      top: 4px;
+      right: -137px;
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+.cooperation {
+  padding: 35px 0 101px;
+  position: relative;
+  overflow: hidden;
+  .blue-label {
+    text-align: left;
+    i:before {
+      display: none;
+    }
+  }
+  .slogan {
+    display: block;
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 160%;
+    color: rgba(14, 33, 70, 0.8);
+    position: absolute;
+    font-style: normal;
+    top: 14px;
+    right: 20px;
+  }
+  .slick-arrow {
+    border: none;
+    background: none;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    bottom: 35px;
+    position: absolute;
+    &:hover {
+      transition: all 0.2s ease;
+      background: none;
+      path {
+        fill: $color3;
+      }
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 37px;
+    left: 112px;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+    }
+    button {
+      width: 30px;
+      height: 1px;
+      background: $color5;
+      border: none;
+      font-size: 0;
+      opacity: 0.4;
+    }
+    .slick-active {
+      button {
+        opacity: 1;
+      }
+
+    }
+  }
+  .slick-prev {
+    left: 44px;
+  }
+  .slick-next {
+    left: 314px;
+  }
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+  }
+  .circle-decor {
+    right: 117px;
+    bottom: 0;
+  }
+}
+.cooperation-list {
+  overflow: hidden;
+  padding: 19px 0 0;
+  margin: 0 0 100px;
+}
+.cooperation-list_text {
+  width: 57%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 90px 0 0;
+  ul {
+    list-style-type: none;
+    counter-reset: li;
+    margin: 7px 0 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    padding: 0 0 0 94px;
+    margin: 0 0 39px;
+    &:after {
+      content: '0' counter(li) '';
+      counter-increment: li;
+      font-size: 50px;
+      line-height: 100%;
+      font-weight: bold;
+      opacity: 0.4;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-shadow: 1px 1px 0 rgba(0,178,255,0.4), 1px -1px 0 rgba(0,178,255,0.4), -1px 1px 0 rgba(0,178,255,0.4), -1px -1px 0 rgba(0,178,255,0.4), 1px 0px 0 rgba(0,178,255,0.4), 0px 1px 0 rgba(0,178,255,0.4), -1px 0px 0 rgba(0,178,255,0.4), 0px -1px 0 rgba(0,178,255,0.4), 0px 0px 1px rgba(0,178,255,0.4);
+
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  b {
+    display: block;
+    margin: 0 0 11px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160%;
+
+  }
+  p {
+    margin: 0;
+  }
+}
+.cooperation-list_carousel {
+  width: 43%;
+  float: left;
+  position: relative;
+  padding: 0 0 0 8px;
+  box-sizing: border-box;
+  max-height: 500px;
+
+}
+.carousel-cooperation {
+position: relative;
+  max-height: 500px;
+}
+.cooperation_in {
+  overflow: hidden;
+  max-height: 600px;
+}
+.cooperation_in-text {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 71px 0 0 146px;
+  h4 {
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  p {
+    margin: 0 0 22px;
+  }
+  .btn-blue {
+    padding: 29px 29px 29px 29px;
+    margin: 28px 0 0;
+  }
+}
+.carousel-cooperation_big {
+  width: 50%;
+  float: left;
+  position: relative;
+  .carousel-cooperation {
+    max-height: none;
+  }
+
+  .slick-dots {
+    bottom: 57px;
+  }
+  .slick-arrow {
+    bottom: 55px;
+  }
+  .masthead_counter {
+    bottom: 51px;
+    left: 78px;
+  }
+
+
+
+}
+.banner-cooperation {
+  .btn-blue {
+    margin: 20px 0 0;
+    padding: 29px 29px 29px 29px;
+  }
+
+}
+.masthead_counter {
+  position: absolute;
+  bottom: 31px;
+  font-weight: 500;
+
+  left: 86px;
+  span {
+    margin: 0 0 0 180px;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.83);
+  }
+  .counter-active {
+    color: $color5;
+    left: 78px;
+    margin: 0;
+
+  }
+}
